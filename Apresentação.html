@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="shortcut icon" href="img/cinema.png">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <title>Apresentação</title>
+</head>
+<style>
+    .logoNome {
+        font-family: Comic Sans MS;
+        color: #ffc20e;
+    }
+
+    .nomes {
+        color: #ffc20e;
+    }
+
+    .btn-outline-nomes {
+        color: #ffc20e;
+        border-color: #ffc20e;
+    }
+
+    .btn-outline-nomes:hover {
+        color: #fff;
+        background-color: #ffc20e;
+        border-color: #ffc20e;
+    }
+
+    .nav {
+        background-color: #0f0f0f;
+    }
+
+    .espaceUser {
+        padding-left: 16em;
+    }
+
+    .espaceCadastre {
+        padding-left: 1em;
+    }
+
+    .espaceProduto {
+        padding-left: 1em;
+    }
+
+    .espaceQuem {
+        padding-left: 1em;
+    }
+
+    .espaceApre {
+        padding-left: 2em;
+    }
+
+    .fundo {
+        width: 100%;
+    }
+
+    .bg-button {
+        background-color: #ffc20e;
+    }
+
+    body {
+        background-image: url("img/fundo.jpg");
+        background-repeat: no-repeat;
+    }
+
+    .textoHome {
+        padding-top: 5em;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"><span class="logoNome">Cinema
+                    Filme</span></a>
+
+            <button class="navbar-toggler bg-button" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Apresentação.html"><span class="nomes espaceApre">Apresentação</span>
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Quem Somos.html"><span class="nomes espaceQuem">Quem somos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Produtos.html" tabindex="-1" aria-disabled="true"><span
+                                class="nomes espaceProduto">Produtos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cadastro.html" tabindex="-1" aria-disabled="true"><span
+                                class="nomes espaceCadastre">Cadastre-se</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><span
+                                class="nomes espaceUser"><span>barry_allen65</span></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-auto">
+                        <a href="#" style="width:50px; height:50px; padding-top: 10px;"
+                            class="btn btn-outline-nomes ml-xl-3 mb-3 mb-xl-0 mx-sm-auto d-block rounded-circle">
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <h3 class="d-xl-block text-center display-4 my-5 nomes animated bounceInDown">Os filmes com as maiores bilheterias mundiais!</h3>
+    </div>
+
+    <div class="container row mx-auto">
+        <div class="col-lg-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner animated bounceInLeft">
+                    <div class="carousel-item active">
+                        <img src="img/star wars.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="img/star wars.jpg" class="img-fluid d-lg-none">
+                    </div>
+                    <div class="carousel-item animated">
+                        <img src="img/guerra infinita.jpeg" class="img-fluid d-none d-lg-block">
+                        <img src="img/guerra infinita.jpeg" class="img-fluid d-lg-none">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/jurassic.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="img/jurassic.jpg" class="img-fluid d-lg-none">
+                    </div>
+                </div>
+                <div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner animated bounceInRight">
+                    <div class="carousel-item active">
+                        <img src="img/avengers.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="img/avengers.jpg" class="img-fluid d-lg-none">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/velozes.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="img/velozes.jpg" class="img-fluid d-lg-none">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/era de ultron.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="img/era de ultron.jpg" class="img-fluid d-lg-none">
+                    </div>
+                </div>
+                <div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mx-auto textoHome">
+        <div class="col-lg-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner animated bounceIn">
+                    <div class="carousel-item active">
+                        <img src="img/endgame.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="img/endgame.jpg" class="img-fluid d-lg-none">
+                    </div>
+                    <div class="carousel-item animated">
+                        <img src="img/avatar.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="img/avatar.jpg" class="img-fluid d-lg-none">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/titanic.jpg" class="img-fluid d-none d-lg-block">
+                        <img src="img/titanic.jpg" class="img-fluid d-lg-none">
+                    </div>
+                </div>
+                <div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

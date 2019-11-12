@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="CSS/animate.css">
+    <link rel="shortcut icon" href="img/cinema.png">
+</head>
+<style>
+    .logoNome {
+        font-family: Comic Sans MS;
+        color: #ffc20e;
+    }
+
+    .nomes {
+        color: #ffc20e;
+    }
+
+    .btn-outline-nomes {
+        color: #ffc20e;
+        border-color: #ffc20e;
+    }
+
+    .btn-outline-nomes:hover {
+        color: #fff;
+        background-color: #ffc20e;
+        border-color: #ffc20e;
+    }
+
+    .nav {
+        background-color: #0f0f0f;
+    }
+
+    .espaceUser {
+        padding-left: 16em;
+    }
+
+    .espaceCadastre {
+        padding-left: 1em;
+    }
+
+    .espaceProduto {
+        padding-left: 1em;
+    }
+
+    .espaceQuem {
+        padding-left: 1em;
+    }
+
+    .espaceApre {
+        padding-left: 2em;
+    }
+
+    .fundo {
+        width: 100%;
+    }
+
+    body {
+        background-image: url("img/fundo.jpg");
+    }
+
+    .bg-button {
+        background-color: #ffc20e;
+    }
+
+    .textoCadastro {
+        padding-top: 0.5em;
+        text-align: center;
+    }
+
+    .form {
+        font-size: 1.5em;
+    }
+
+    .checkNao {
+        padding-right: 12em;
+    }
+
+    .checkSim {
+        padding-left: 8em;
+    }
+
+    .checkMan {
+        padding-left: 10em;
+    }
+
+    .checkWoman {
+        padding-right: 10em;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-xl navbar-light nav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"><span class="logoNome">Cinema
+                    Filme</span></a>
+
+            <button class="navbar-toggler bg-button" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="Apresentação.html"><span class="nomes espaceApre">Apresentação</span>
+                            <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Quem Somos.html"><span class="nomes espaceQuem">Quem somos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Produtos.html" tabindex="-1" aria-disabled="true"><span
+                                class="nomes espaceProduto">Produtos</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cadastro.html" tabindex="-1" aria-disabled="true"><span
+                                class="nomes espaceCadastre">Cadastre-se</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><span
+                                class="nomes espaceUser"><span>barry_allen65</span></span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ml-auto">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-auto">
+                        <a href="#" style="width:50px; height:50px; padding-top: 10px;"
+                            class="btn btn-outline-nomes ml-xl-3 mb-3 mb-xl-0 mx-sm-auto d-block rounded-circle">
+                            Sair
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="">
+        <div>
+            <div class="d-xl-block animated bounceIn">
+                <h1 class="display-3 nomes textoCadastro">CADASTRE-SE</h1>
+            </div>
+        </div>
+    </header>
+
+    <div class="row my-5 container mx-auto">
+        <div class="col-lg-6 text-center animated bounceInLeft">
+            <form action="" method="POST">
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Nome">Nome</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto" id="nome">
+                        <input class="form-control form-control-lg" type="text" placeholder="Digite seu nome"
+                            name="nome" id="Nome" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Email">E-mail</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto" id="email">
+                        <input class="form-control form-control-lg" type="email" placeholder="Digite seu email"
+                            name="email" id="Email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Senha">Senha</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto" id="senha">
+                        <input class="form-control form-control-lg" type="password" placeholder="Digite sua senha"
+                            name="senha" id="Senha">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Tel">Telefone</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-2 my-1 ml-auto" id="DDD">
+                        <input class="form-control form-control-lg" type="text" placeholder="DDD" name="ddd" id="DDD">
+                    </div>
+                    <div class="col-lg-7 my-1 mr-auto" id="tel">
+                        <input class="form-control form-control-lg" type="number"
+                            placeholder="Digite seu número de telefone" name="tel" id="Tel">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Cel">Celular</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto" id="cel">
+                        <input class="form-control form-control-lg" type="number"
+                            placeholder="Digite seu número de celular" name="cel" id="Cel">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Nov">Deseja receber nossas
+                            novidades?</label>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="my-1 mx-auto checkSim" id="nov">
+                        <input class="form-check-input" type="checkbox" value="sim" name="sim" id="Nov">
+                        <label class="form-check-label nomes" for="Nov">Sim</label>
+                    </div>
+                    <div class="form-check">
+                        <div class="my-1 checkNao">
+                            <input class="form-check-input" type="checkbox" value="não" name="não" id="não">
+                            <label class="form-check-label nomes" for="exampleCheck1">Não</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6 text-center animated bounceInRight">
+            <form action="" method="POST">
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="RG">RG</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto" id="rg">
+                        <input class="form-control form-control-lg" type="text" placeholder="Ex.: 00.000.000-0"
+                            name="rg" id="RG">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="CPF">CPF</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto" id="cpf">
+                        <input class="form-control form-control-lg" type="text" placeholder="Ex.: 000.000.000-00"
+                            name="cpf" id="CPF">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Local">Endereço</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-6 my-1 ml-auto" id="local">
+                        <input class="form-control form-control-lg" type="text" placeholder="Rua/Avenida" name="local"
+                            id="Local">
+                    </div>
+                    <div class="form-group col-lg-3 my-1 mr-auto" id="number">
+                        <input class="form-control form-control-lg" type="text" placeholder="Número" name="number"
+                            id="number">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Bairro">Bairro</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto" id="bairro">
+                        <input class="form-control form-control-lg" type="text" placeholder="Informe seu bairro"
+                            name="bairro" id="Bairro">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-lg-4 ml-auto mt-3">
+                        <label class="lead form-check-label form-control-lg nomes form" for="cidade">Cidade</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="Informe sua cidade">
+                    </div>
+                    <div class="form-group col-lg-5 mr-auto mt-3">
+                        <label class="lead form-check-label form-control-lg nomes form" for="estado">Estado</label>
+                        <select id="estado" class="form-control">
+                            <option value="vazio">Selecione</option>
+                            <option value="sp">São Paulo</option>
+                            <option value="bsb">Brasília</option>
+                            <option value="rj">Rio de Janeiro</option>
+                            <option value="for">Fortaleza</option>
+                            <option value="mj">Minas Gerais</option>
+                            <option value="bh">Bahia</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-lg-9 my-1 mx-auto">
+                        <label class="lead form-check-label form-control-lg nomes form" for="Nov">Informe seu
+                            gênero</label>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="form-check my-1 mx-auto checkMan">
+                        <input class="form-check-input" type="radio" value="masculino" name="homem" id="homem">
+                        <label class="form-check-label nomes" for="homem">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <div class="my-1 mx-auto checkWoman">
+                            <input class="form-check-input" type="radio" value="feminino" name="mulher" id="mulher">
+                            <label class="form-check-label nomes" for="mulher">Feminino</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="form-row animated bounceInUp">
+        <div class="my-5 mx-auto col-lg-8">
+            <input class="form-control form-control-lg btn btn-lg btn-outline-nomes" type="submit" value="Enviar"
+                name="login">
+        </div>
+    </div>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
